@@ -1,0 +1,62 @@
+.modal {
+    
+    &__overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 99;
+        height: 100%;
+        width: 100%;
+        background: #0005;
+        backdrop-filter: blur(5px);
+    }
+
+    &__user {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        z-index: 999;
+        transform: translate(-50%, -50%);
+        border-radius: 6px;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 30px 40px;
+        padding-right: 80px;
+
+        &__img {
+            width: 280px;
+            height: 270px;
+            background-color: #ddd;
+        }
+
+        &__info {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        &__title {
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        &__text {
+            font-weight: 600;
+        }
+
+        &__btn {
+            border: none;
+            background-color: transparent;
+            position: absolute;
+            top: 10px;
+            right: 15px;
+
+            svg {
+                font-size: 30px;
+                color: red;
+            }
+        }
+    }
+}
